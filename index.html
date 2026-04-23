@@ -3,187 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Raif - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Mohammad Raif | AI Portfolio</title>
+    <meta name="description" content="Mohammad Raif is a final-year Computer Science student focused on applied AI, semantic search, information retrieval, and responsible AI.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Mohammad Raif</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item">
-                        <button id="theme-toggle" class="btn btn-outline-secondary">
-                            <i class="fas fa-moon"></i>
+    <div class="page-shell">
+        <nav class="navbar navbar-expand-lg fixed-top app-navbar" id="app-navbar">
+            <div class="container">
+                <a class="navbar-brand brand-mark" href="#top">
+                    <span class="brand-initials">MR</span>
+                    <span class="brand-text">Mohammad Raif</span>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link nav-jump" href="#about" id="nav-about">About</a></li>
+                        <li class="nav-item"><a class="nav-link nav-jump" href="#skills" id="nav-skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link nav-jump" href="#experience" id="nav-experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link nav-jump" href="#research" id="nav-research">Research</a></li>
+                        <li class="nav-item"><a class="nav-link nav-jump" href="#projects" id="nav-projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link nav-jump" href="#contact" id="nav-contact">Contact</a></li>
+                    </ul>
+                    <div class="nav-tools ms-lg-4">
+                        <div class="lang-switch" aria-label="Language switcher">
+                            <button class="lang-btn active" data-lang="en" type="button">EN</button>
+                            <button class="lang-btn" data-lang="de" type="button">DE</button>
+                        </div>
+                        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle theme">
+                            <i class="fa-solid fa-moon"></i>
                         </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header Section -->
-    <header class="header text-center">
-        <div class="container header-content">
-            <h1 class="display-3 name-highlight">Mohammad Raif</h1>
-            <p class="lead">B.Tech CSE Student | Web Developer | Data Enthusiast</p>
-            <p class="contact-info">
-                <a href="mailto:thisisraif2@gmail.com" class="text-decoration-none"><i class="fas fa-envelope"></i> thisisraif2@gmail.com</a> |
-                <a href="tel:+917618284486" class="text-decoration-none"><i class="fas fa-phone"></i> +91 7618284486</a> |
-                <a href="https://www.linkedin.com/in/mohammad-raif-4bb5881a8/" target="_blank" class="text-decoration-none"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            </p>
-            <p>New Delhi, India</p>
-            <a href="RenderCV_EngineeringResumes_Theme__1_ (3).pdf" download class="btn btn-primary mt-3"><i class="fas fa-download"></i> Download Resume</a>
-        </div>
-    </header>
-
-    <!-- Summary Section -->
-    <section id="summary" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Summary</h2>
-            <p>4th-year B.Tech CSE student at Jamia Hamdard skilled in web development, REST APIs, Data Structures & Algorithms (DSA), and data analysis. Proficient in Python, SQL, and data science libraries like Pandas and NumPy. Passionate about building clean, scalable web applications and leveraging data-driven insights to solve real-world problems in agile environments.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Languages</h5>
-                    <ul>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>JavaScript</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>C++</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h5>Frameworks and Libraries</h5>
-                    <ul>
-                        <li>Bootstrap</li>
-                        <li>FastAPI</li>
-                        <li>Pandas</li>
-                        <li>NumPy</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h5>Databases</h5>
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h5>Tools</h5>
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                        <li>Excel</li>
-                        <li>Jupyter Notebook</li>
-                    </ul>
-                </div>
-                <div class="col-md-12">
-                    <h5>Concepts</h5>
-                    <ul>
-                        <li>Web Development</li>
-                        <li>REST APIs</li>
-                        <li>Data Structures & Algorithms (DSA)</li>
-                        <li>Data Analysis</li>
-                        <li>Agile Methodology</li>
-                    </ul>
+                        <a class="resume-pill" id="nav-resume" href="raif_cv_2026.pdf" download>
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span>Resume</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Education Section -->
-    <section id="education" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">B.Tech in Computer Science Engineering</h5>
-                    <p class="card-text">Jamia Hamdard, New Delhi<br>Expected 2026</p>
+        <header class="hero-section" id="top">
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+            <div class="container position-relative">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <div class="hero-copy-block reveal">
+                            <p class="eyebrow" id="hero-eyebrow">AI • Search • Responsible Systems</p>
+                            <h1 class="hero-title" id="hero-title">I build AI products that feel useful in the real world.</h1>
+                            <p class="hero-copy" id="hero-copy">
+                                I am Mohammad Raif, a final-year Computer Science student focused on applied AI, information retrieval, data science, and full-stack product building.
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#projects" class="btn btn-solid nav-jump" id="hero-primary">See projects</a>
+                                <a href="raif_cv_2026.pdf" download class="btn btn-outline-soft" id="hero-secondary">Download CV</a>
+                            </div>
+                            <div class="hero-links">
+                                <a href="mailto:thisisraif2@gmail.com"><i class="fa-solid fa-envelope"></i> thisisraif2@gmail.com</a>
+                                <a href="tel:+917618284486"><i class="fa-solid fa-phone"></i> +91 7618284486</a>
+                                <a href="https://www.linkedin.com/in/mohammad-raif-4bb5881a8/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                                <a href="https://github.com/thisisraif" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="hero-panel reveal">
+                            <div class="panel-badge" id="hero-status">Currently focused on applied AI and intelligent search experiences</div>
+                            <h2 class="panel-title" id="hero-panel-title">What I care about</h2>
+                            <p class="panel-copy" id="hero-panel-copy">
+                                I enjoy taking complex systems like semantic search, legal document analysis, object detection, or recommendation pipelines and making them feel clear, fast, and useful to real users.
+                            </p>
+                            <div class="fact-grid" id="hero-facts"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Chatbot</h5>
-                    <p class="card-text">Developed an intelligent chatbot using Python, leveraging Pandas and NumPy for data processing and SQL for database integration. Implemented natural language processing features and REST API connectivity for real-time user interaction.</p>
-                    <a href="https://github.com/mohammad-raif/chatbot" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fab fa-github"></i> View Project</a>
+        <main>
+            <section class="section" id="about">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-kicker" id="about-kicker">About me</span>
+                        <h2 id="about-title">Building thoughtful AI, not just flashy demos</h2>
+                    </div>
+                    <div class="row g-4 align-items-stretch">
+                        <div class="col-lg-7">
+                            <article class="story-card reveal">
+                                <p id="about-text-1">
+                                    I am a final-year B.Tech Computer Science student at Jamia Hamdard with a strong interest in Artificial Intelligence, Information Retrieval, Data Science, and Responsible AI.
+                                </p>
+                                <p id="about-text-2">
+                                    What excites me most is building systems that turn messy, real-world information into something people can actually explore and trust. That is why I enjoy working on semantic search, document understanding, intelligent recommendation, computer vision, and clean user-facing interfaces.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="stats-stack" id="about-stats"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Spotify Clone</h5>
-                    <p class="card-text">Built a responsive music player using HTML, CSS, and JavaScript with modular JS structure and dynamic media playback.</p>
-                    <a href="https://github.com/thisisraif/spotify-clone1" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fab fa-github"></i> View Project</a>
-                    
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Phone Recommender Tool</h5>
-                    <p class="card-text">Created a phone recommender web app using HTML, CSS, and JavaScript for the frontend. The backend is built with Python and FastAPI, which reads and analyzes Excel data to deliver tailored phone recommendations.</p>
-                  <a href="https://github.com/thisisraif/phone-finder" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm"><i class="fab fa-github"></i> View Project</a>
-                    <a href="https://thisisraif.github.io/phone-finder" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success btn-sm"><i class="fas fa-eye"></i> Live Demo</a>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Experience & Involvement</h2>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">IEEE Website Team Member</h5>
-                    <p class="card-text">Built a clean and responsive website for IEEE JHSB using Bootstrap, HTML, and JavaScript, and collaborated using Git for version control.</p>
+            <section class="section section-soft" id="skills">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-kicker" id="skills-kicker">Technical toolkit</span>
+                        <h2 id="skills-title">Skills that support both the model and the product</h2>
+                    </div>
+                    <div class="skills-grid" id="skills-grid"></div>
                 </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Placement Cell Data Team</h5>
-                    <p class="card-text">Analyzed structured data using Microsoft Excel, streamlining workflows to improve operational efficiency and enhance reporting accuracy.</p>
+            </section>
+
+            <section class="section" id="experience">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-kicker" id="experience-kicker">Experience</span>
+                        <h2 id="experience-title">Hands-on work across AI, backend logic, and user experience</h2>
+                    </div>
+                    <div class="timeline" id="experience-list"></div>
                 </div>
+            </section>
+
+            <section class="section section-soft" id="research">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-kicker" id="research-kicker">Research</span>
+                        <h2 id="research-title">Topics I like thinking about deeply</h2>
+                    </div>
+                    <div class="research-grid" id="research-grid"></div>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-kicker" id="projects-kicker">Featured work</span>
+                        <h2 id="projects-title">Projects explained simply, with the code linked clearly</h2>
+                        <p class="section-intro" id="projects-intro">
+                            I like building projects that solve a real problem, explain themselves well, and leave room for future growth.
+                        </p>
+                    </div>
+                    <div class="projects-grid" id="projects-grid"></div>
+                    <div class="text-center mt-4 reveal">
+                        <a class="btn btn-outline-soft" href="https://github.com/thisisraif" target="_blank" rel="noopener noreferrer" id="projects-profile-link">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Explore more on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-soft" id="education">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-kicker" id="education-kicker">Education</span>
+                        <h2 id="education-title">Academic foundation</h2>
+                    </div>
+                    <div id="education-card" class="reveal"></div>
+                </div>
+            </section>
+
+            <section class="section contact-section" id="contact">
+                <div class="container">
+                    <div class="contact-card reveal">
+                        <div>
+                            <span class="section-kicker" id="contact-kicker">Let us connect</span>
+                            <h2 id="contact-title">If you are building in AI, search, data, or full-stack product engineering, I would love to talk.</h2>
+                            <p id="contact-copy">
+                                I am always interested in strong teams, meaningful products, and work that combines technical depth with real-world usefulness.
+                            </p>
+                        </div>
+                        <div class="contact-actions">
+                            <a class="btn btn-solid" href="mailto:thisisraif2@gmail.com" id="contact-email-btn">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Email me</span>
+                            </a>
+                            <a class="btn btn-outline-soft" href="https://www.linkedin.com/in/mohammad-raif-4bb5881a8/" target="_blank" rel="noopener noreferrer" id="contact-linkedin-btn">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>Connect on LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p id="footer-text">© 2026 Mohammad Raif. Built with clarity, curiosity, and a real love for applied AI.</p>
+                <a href="#top" class="back-to-top nav-jump" id="footer-back">Back to top</a>
             </div>
-        </div>
-    </section>
+        </footer>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2025 Mohammad Raif. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
