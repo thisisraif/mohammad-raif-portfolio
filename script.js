@@ -2,6 +2,7 @@ const githubLinks = {
     profile: "https://github.com/thisisraif",
     legalPdf: "https://github.com/thisisraif/Legal-PDF-Analyzer",
     phishing: "https://github.com/thisisraif/Phishing_Detection",
+    phishingLive: "https://recorded-quotes-creek-completely.trycloudflare.com",
     phoneFinder: "https://github.com/thisisraif/phone-finder",
     spotify: "https://github.com/thisisraif/spotify-clone1",
     phoneFinderLive: "https://thisisraif.github.io/phone-finder"
@@ -151,7 +152,8 @@ const content = {
                     title: "Phishing URL Detection System",
                     description: "A machine learning project that checks whether a URL looks safe or suspicious by extracting patterns from the link and sending the prediction through a FastAPI-based backend.",
                     tags: ["Python", "FastAPI", "Machine learning", "Cybersecurity"],
-                    github: githubLinks.phishing
+                    github: githubLinks.phishing,
+                    live: githubLinks.phishingLive
                 },
                 {
                     title: "Phone Recommendation Tool",
@@ -331,7 +333,8 @@ const content = {
                     title: "Phishing URL Detection System",
                     description: "Ein Machine-Learning-Projekt, das prüft, ob eine URL vertrauenswürdig oder verdächtig wirkt, indem Muster aus dem Link extrahiert und über ein FastAPI-Backend bewertet werden.",
                     tags: ["Python", "FastAPI", "Machine Learning", "Cybersecurity"],
-                    github: githubLinks.phishing
+                    github: githubLinks.phishing,
+                    live: githubLinks.phishingLive
                 },
                 {
                     title: "Phone Recommendation Tool",
