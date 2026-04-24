@@ -8,6 +8,10 @@ const githubLinks = {
     phoneFinderLive: "https://thisisraif.github.io/phone-finder"
 };
 
+const paperLinks = {
+    responsibleAi: "ethical-safe-responsible-ai-paper.pdf"
+};
+
 const content = {
     en: {
         pageTitle: "Mohammad Raif | AI Portfolio",
@@ -18,13 +22,15 @@ const content = {
             research: "Research",
             projects: "Projects",
             contact: "Contact",
+            paper: "Research Paper",
             resume: "Resume"
         },
         hero: {
-            eyebrow: "AI • Search • Responsible Systems",
+            eyebrow: "AI | Search | Responsible Systems",
             title: "I build AI products that feel useful in the real world.",
             copy: "I am Mohammad Raif, a final-year Computer Science student focused on applied AI, information retrieval, data science, and full-stack product building.",
             primary: "See projects",
+            paper: "Download research paper",
             secondary: "Download CV",
             status: "Currently focused on applied AI and intelligent search experiences",
             panelTitle: "What I care about",
@@ -33,7 +39,7 @@ const content = {
                 { value: "3", label: "Internships completed" },
                 { value: "4", label: "Public project repos" },
                 { value: "2026", label: "Expected graduation" },
-                { value: "1", label: "AI summit presentation" }
+                { value: "1", label: "Published research paper" }
             ]
         },
         about: {
@@ -47,8 +53,8 @@ const content = {
                     label: "AI internship where I worked on the Legal PDF Analyzer and an Indian Navy object detection project."
                 },
                 {
-                    value: "India AI Impact Summit 2026",
-                    label: "The Legal PDF Analyzer was presented here as an applied AI project."
+                    value: "Published Paper",
+                    label: "Authored a paper on Ethical, Safe and Responsible AI with a lifecycle framework for real-world deployment."
                 },
                 {
                     value: "Responsible AI",
@@ -117,20 +123,22 @@ const content = {
             title: "Topics I like thinking about deeply",
             items: [
                 {
-                    title: "Bias in recommendation systems on X and YouTube",
-                    copy: "I studied how ranking systems can reinforce popularity, limit diversity, and shape what users repeatedly see over time.",
+                    title: "Bias in LLM-based recommendation systems on X and YouTube",
+                    copy: "I have worked on understanding how modern recommendation systems that include large language model components can shape ranking, amplify certain viewpoints, and influence what people repeatedly see over time.",
                     bullets: [
-                        "Looked at popularity bias, exposure bias, and preference reinforcement in large content platforms.",
-                        "Focused on how engagement-driven ranking affects creator visibility, information diversity, and user discovery."
+                        "Examined popularity bias, exposure bias, and preference reinforcement in recommendation flows built around engagement and language-aware ranking.",
+                        "Focused on how LLM-influenced recommendation behavior can affect creator visibility, content diversity, and discovery patterns across YouTube and X."
                     ]
                 },
                 {
-                    title: "Ethical, safe, and responsible AI",
-                    copy: "I am especially interested in how AI systems should be governed, evaluated, and deployed responsibly in the real world.",
+                    title: "Published paper: Ethical, Safe & Responsible AI",
+                    copy: "I published a research paper titled \"Ethical, Safe & Responsible AI: A Lifecycle Framework for Emerging Real-World Deployment,\" focused on practical AI governance, risk prioritization, and trustworthy deployment.",
                     bullets: [
-                        "Presented work on AI lifecycle governance for real-world deployment in a national seminar.",
-                        "Interested in trustworthy AI, safety, transparency, accountability, and deployment ethics."
-                    ]
+                        "The paper proposes a lifecycle-based framework for responsible AI across design, evaluation, deployment, monitoring, and governance.",
+                        "It explores practical applications in agriculture, healthcare, and education, with emphasis on safety, fairness, accountability, and operational trust."
+                    ],
+                    link: paperLinks.responsibleAi,
+                    linkLabel: "Download paper"
                 }
             ]
         },
@@ -186,60 +194,62 @@ const content = {
             linkedinBtn: "Connect on LinkedIn"
         },
         footer: {
-            text: "© 2026 Mohammad Raif. Built with clarity, curiosity, and a real love for applied AI.",
+            text: "(c) 2026 Mohammad Raif. Built with clarity, curiosity, and a real love for applied AI.",
             back: "Back to top"
         }
     },
     de: {
         pageTitle: "Mohammad Raif | KI-Portfolio",
         nav: {
-            about: "Über mich",
-            skills: "Fähigkeiten",
+            about: "\u00dcber mich",
+            skills: "F\u00e4higkeiten",
             experience: "Erfahrung",
             research: "Forschung",
             projects: "Projekte",
             contact: "Kontakt",
+            paper: "Forschungspapier",
             resume: "Lebenslauf"
         },
         hero: {
-            eyebrow: "KI • Suche • Verantwortungsvolle Systeme",
-            title: "Ich entwickle KI-Produkte, die sich in der echten Welt wirklich nützlich anfühlen.",
+            eyebrow: "KI | Suche | Verantwortungsvolle Systeme",
+            title: "Ich entwickle KI-Produkte, die sich in der echten Welt wirklich n\u00fctzlich anf\u00fchlen.",
             copy: "Ich bin Mohammad Raif, ein B.Tech-Student im letzten Studienjahr mit Fokus auf angewandte KI, Information Retrieval, Data Science und Full-Stack-Produktentwicklung.",
             primary: "Projekte ansehen",
+            paper: "Forschungspapier herunterladen",
             secondary: "Lebenslauf herunterladen",
             status: "Derzeit konzentriere ich mich auf angewandte KI und intelligente Sucherlebnisse",
             panelTitle: "Was mir wichtig ist",
-            panelCopy: "Mich begeistert es, komplexe Systeme wie semantische Suche, juristische Dokumentenanalyse, Objekterkennung oder Empfehlungspipelines so zu gestalten, dass sie klar, schnell und für echte Nutzer hilfreich sind.",
+            panelCopy: "Mich begeistert es, komplexe Systeme wie semantische Suche, juristische Dokumentenanalyse, Objekterkennung oder Empfehlungspipelines so zu gestalten, dass sie klar, schnell und f\u00fcr echte Nutzer hilfreich sind.",
             facts: [
                 { value: "3", label: "Abgeschlossene Praktika" },
-                { value: "4", label: "Öffentliche Projekt-Repositories" },
+                { value: "4", label: "\u00d6ffentliche Projekt-Repositories" },
                 { value: "2026", label: "Voraussichtlicher Abschluss" },
-                { value: "1", label: "Präsentation auf einem KI-Summit" }
+                { value: "1", label: "Ver\u00f6ffentlichtes Forschungspapier" }
             ]
         },
         about: {
-            kicker: "Über mich",
+            kicker: "\u00dcber mich",
             title: "Durchdachte KI statt nur beeindruckender Demos",
-            text1: "Ich bin B.Tech-Student im letzten Jahr an der Jamia Hamdard und interessiere mich besonders für Künstliche Intelligenz, Information Retrieval, Data Science und Responsible AI.",
-            text2: "Am meisten begeistert mich, unübersichtliche reale Informationen in Systeme zu verwandeln, die Menschen wirklich verstehen und sinnvoll nutzen können. Deshalb arbeite ich gern an semantischer Suche, Dokumentenverständnis, intelligenten Empfehlungssystemen, Computer Vision und klaren Benutzeroberflächen.",
+            text1: "Ich bin B.Tech-Student im letzten Jahr an der Jamia Hamdard und interessiere mich besonders f\u00fcr K\u00fcnstliche Intelligenz, Information Retrieval, Data Science und Responsible AI.",
+            text2: "Am meisten begeistert mich, un\u00fcbersichtliche reale Informationen in Systeme zu verwandeln, die Menschen wirklich verstehen und sinnvoll nutzen k\u00f6nnen. Deshalb arbeite ich gern an semantischer Suche, Dokumentenverst\u00e4ndnis, intelligenten Empfehlungssystemen, Computer Vision und klaren Benutzeroberfl\u00e4chen.",
             stats: [
                 {
                     value: "Appolo Computers",
-                    label: "KI-Praktikum, in dem ich am Legal PDF Analyzer und an einem Objekterkennungsprojekt für einen Use Case der indischen Marine gearbeitet habe."
+                    label: "KI-Praktikum, in dem ich am Legal PDF Analyzer und an einem Objekterkennungsprojekt f\u00fcr einen Use Case der indischen Marine gearbeitet habe."
                 },
                 {
-                    value: "India AI Impact Summit 2026",
-                    label: "Dort wurde der Legal PDF Analyzer als angewandtes KI-Projekt vorgestellt."
+                    value: "Ver\u00f6ffentlichtes Paper",
+                    label: "Autor eines Forschungspapiers zu Ethical, Safe and Responsible AI mit einem Lifecycle-Framework f\u00fcr reale Deployment-Szenarien."
                 },
                 {
                     value: "Responsible AI",
-                    label: "Langfristiges Interesse an Fairness, Sicherheit, Governance und vertrauenswürdiger Einführung von KI."
+                    label: "Langfristiges Interesse an Fairness, Sicherheit, Governance und vertrauensw\u00fcrdiger Einf\u00fchrung von KI."
                 }
             ]
         },
         skills: {
             kicker: "Technisches Werkzeugset",
-            title: "Fähigkeiten für Modell, Datenpipeline und Produkt",
+            title: "F\u00e4higkeiten f\u00fcr Modell, Datenpipeline und Produkt",
             groups: [
                 {
                     title: "Programmierung",
@@ -266,11 +276,11 @@ const content = {
                 {
                     role: "KI-Praktikant",
                     company: "Appolo Computers Pvt. Ltd., Neu-Delhi",
-                    period: "Dez 2025 - Mär 2026",
+                    period: "Dez 2025 - M\u00e4r 2026",
                     points: [
-                        "Arbeitete an zwei angewandten KI-Produkten: einem Legal PDF Analyzer und einem YOLO-basierten Objekterkennungssystem für einen Use Case der indischen Marine.",
+                        "Arbeitete an zwei angewandten KI-Produkten: einem Legal PDF Analyzer und einem YOLO-basierten Objekterkennungssystem f\u00fcr einen Use Case der indischen Marine.",
                         "Trug zu Systemarchitektur, Datenfluss, Retrieval, Evaluierung und Interface-Integration bei, damit Modellausgaben in der Praxis besser nutzbar werden.",
-                        "Fokussierte mich darauf, KI-Pipelines schneller, strukturierter und einsatznäher zu machen statt sie nur als Experimente zu behandeln."
+                        "Fokussierte mich darauf, KI-Pipelines schneller, strukturierter und einsatzn\u00e4her zu machen statt sie nur als Experimente zu behandeln."
                     ]
                 },
                 {
@@ -279,7 +289,7 @@ const content = {
                     period: "Aug 2025 - Okt 2025",
                     points: [
                         "Entwickelte responsive UI-Komponenten mit starkem Fokus auf Nutzbarkeit, saubere Interaktionen und gute API-Integration.",
-                        "Arbeitete über mehrere Produktbereiche hinweg und verbesserte so sowohl Umsetzungsgeschwindigkeit als auch Konsistenz."
+                        "Arbeitete \u00fcber mehrere Produktbereiche hinweg und verbesserte so sowohl Umsetzungsgeschwindigkeit als auch Konsistenz."
                     ]
                 },
                 {
@@ -287,65 +297,67 @@ const content = {
                     company: "Eduexcel Global",
                     period: "Feb 2025 - Jul 2025",
                     points: [
-                        "Half beim Aufbau einer responsiven Plattform für internationale Studierende, um Studiengänge zu entdecken und über integrierte Support-Funktionen in Kontakt zu treten.",
-                        "Arbeitete kollaborativ an Entwicklungsaufgaben und lieferte Features mit Fokus auf Zuverlässigkeit und saubere Ausführung."
+                        "Half beim Aufbau einer responsiven Plattform f\u00fcr internationale Studierende, um Studieng\u00e4nge zu entdecken und \u00fcber integrierte Support-Funktionen in Kontakt zu treten.",
+                        "Arbeitete kollaborativ an Entwicklungsaufgaben und lieferte Features mit Fokus auf Zuverl\u00e4ssigkeit und saubere Ausf\u00fchrung."
                     ]
                 }
             ]
         },
         research: {
             kicker: "Forschung",
-            title: "Themen, über die ich gern tiefer nachdenke",
+            title: "Themen, \u00fcber die ich gern tiefer nachdenke",
             items: [
                 {
-                    title: "Bias in Empfehlungssystemen auf X und YouTube",
-                    copy: "Ich habe untersucht, wie Ranking-Systeme Popularität verstärken, Vielfalt einschränken und langfristig beeinflussen, was Nutzer immer wieder sehen.",
+                    title: "Bias in LLM-basierten Empfehlungssystemen auf X und YouTube",
+                    copy: "Ich habe untersucht, wie moderne Empfehlungssysteme mit Large-Language-Model-Komponenten Rankings beeinflussen, bestimmte Sichtweisen verst\u00e4rken und langfristig formen k\u00f6nnen, was Nutzer immer wieder sehen.",
                     bullets: [
-                        "Analysierte Popularitätsbias, Exposure Bias und Präferenzverstärkung auf großen Content-Plattformen.",
-                        "Untersuchte, wie engagementgetriebene Rankings die Sichtbarkeit von Creators, Informationsvielfalt und Content-Discovery beeinflussen."
+                        "Analysierte Popularit\u00e4tsbias, Exposure Bias und Pr\u00e4ferenzverst\u00e4rkung in Empfehlungssystemen mit engagement- und sprachgesteuerten Rankings.",
+                        "Untersuchte, wie LLM-beeinflusstes Empfehlungsverhalten die Sichtbarkeit von Creators, Informationsvielfalt und Discovery-Muster auf YouTube und X ver\u00e4ndern kann."
                     ]
                 },
                 {
-                    title: "Ethische, sichere und verantwortungsvolle KI",
-                    copy: "Ich interessiere mich besonders dafür, wie KI-Systeme verantwortungsvoll gesteuert, bewertet und in der realen Welt eingesetzt werden sollten.",
+                    title: "Ver\u00f6ffentlichtes Paper: Ethical, Safe & Responsible AI",
+                    copy: "Ich habe ein Forschungspapier mit dem Titel \"Ethical, Safe & Responsible AI: A Lifecycle Framework for Emerging Real-World Deployment\" ver\u00f6ffentlicht, das sich auf praktische KI-Governance, Risikopriorisierung und vertrauensw\u00fcrdige Einf\u00fchrung konzentriert.",
                     bullets: [
-                        "Präsentierte Arbeit zur KI-Lifecycle-Governance für reale Deployment-Szenarien auf einem nationalen Seminar.",
-                        "Interesse an vertrauenswürdiger KI, Sicherheit, Transparenz, Verantwortlichkeit und Deployment-Ethik."
-                    ]
+                        "Das Paper beschreibt ein lebenszyklusorientiertes Framework f\u00fcr Responsible AI \u00fcber Design, Evaluation, Deployment, Monitoring und Governance hinweg.",
+                        "Es behandelt praktische Anwendungen in Landwirtschaft, Gesundheitswesen und Bildung mit Fokus auf Sicherheit, Fairness, Verantwortlichkeit und operatives Vertrauen."
+                    ],
+                    link: paperLinks.responsibleAi,
+                    linkLabel: "Paper herunterladen"
                 }
             ]
         },
         projects: {
-            kicker: "Ausgewählte Arbeiten",
-            title: "Projekte einfach erklärt und mit klaren GitHub-Links",
-            intro: "Ich mag Projekte, die ein echtes Problem lösen, sich gut erklären lassen und Raum für Weiterentwicklung haben.",
+            kicker: "Ausgew\u00e4hlte Arbeiten",
+            title: "Projekte einfach erkl\u00e4rt und mit klaren GitHub-Links",
+            intro: "Ich mag Projekte, die ein echtes Problem l\u00f6sen, sich gut erkl\u00e4ren lassen und Raum f\u00fcr Weiterentwicklung haben.",
             profileLink: "Mehr auf GitHub ansehen",
             githubLabel: "GitHub",
             liveLabel: "Live-Demo",
             items: [
                 {
                     title: "Legal PDF Analyzer",
-                    description: "Eine Legal-Tech-Plattform, die Gerichtsentscheidungen hochlädt, den Text extrahiert und bereinigt, juristische Zitate erkennt und Beziehungen zwischen Fällen über semantische Suche, Zusammenfassungen und Graph-Ansichten sichtbar macht.",
+                    description: "Eine Legal-Tech-Plattform, die Gerichtsentscheidungen hochl\u00e4dt, den Text extrahiert und bereinigt, juristische Zitate erkennt und Beziehungen zwischen F\u00e4llen \u00fcber semantische Suche, Zusammenfassungen und Graph-Ansichten sichtbar macht.",
                     tags: ["Python", "NLP", "Elasticsearch", "Suche", "Full Stack"],
                     github: githubLinks.legalPdf
                 },
                 {
                     title: "Phishing URL Detection System",
-                    description: "Ein Machine-Learning-Projekt, das prüft, ob eine URL vertrauenswürdig oder verdächtig wirkt, indem Muster aus dem Link extrahiert und über ein FastAPI-Backend bewertet werden.",
+                    description: "Ein Machine-Learning-Projekt, das pr\u00fcft, ob eine URL vertrauensw\u00fcrdig oder verd\u00e4chtig wirkt, indem Muster aus dem Link extrahiert und \u00fcber ein FastAPI-Backend bewertet werden.",
                     tags: ["Python", "FastAPI", "Machine Learning", "Cybersecurity"],
                     github: githubLinks.phishing,
                     live: githubLinks.phishingLive
                 },
                 {
                     title: "Phone Recommendation Tool",
-                    description: "Eine Web-App für Produktempfehlungen, die Smartphone-Daten auswertet, Nutzerwünsche wie Budget und Funktionen berücksichtigt und die Kaufentscheidung einfacher macht.",
+                    description: "Eine Web-App f\u00fcr Produktempfehlungen, die Smartphone-Daten auswertet, Nutzerw\u00fcnsche wie Budget und Funktionen ber\u00fccksichtigt und die Kaufentscheidung einfacher macht.",
                     tags: ["FastAPI", "JavaScript", "Excel-Daten", "Empfehlungssystem"],
                     github: githubLinks.phoneFinder,
                     live: githubLinks.phoneFinderLive
                 },
                 {
                     title: "Spotify Clone",
-                    description: "Eine responsive Musikplayer-Oberfläche mit klassischen Frontend-Technologien, die ein vertrautes Hörerlebnis mit dynamischem Playback nachbildet.",
+                    description: "Eine responsive Musikplayer-Oberfl\u00e4che mit klassischen Frontend-Technologien, die ein vertrautes H\u00f6rerlebnis mit dynamischem Playback nachbildet.",
                     tags: ["HTML", "CSS", "JavaScript", "Responsive UI"],
                     github: githubLinks.spotify
                 }
@@ -357,17 +369,17 @@ const content = {
             degree: "B.Tech in Computer Science Engineering",
             school: "Jamia Hamdard, Neu-Delhi",
             meta: ["Letztes Studienjahr", "Abschluss erwartet 2026"],
-            copy: "Mein Studium wurde stark durch mein Interesse an intelligenten Systemen, datengetriebener Problemlösung und Technologien geprägt, denen man im realen Einsatz vertrauen kann."
+            copy: "Mein Studium wurde stark durch mein Interesse an intelligenten Systemen, datengetriebener Probleml\u00f6sung und Technologien gepr\u00e4gt, denen man im realen Einsatz vertrauen kann."
         },
         contact: {
             kicker: "Kontakt",
-            title: "Wenn Sie an KI, Suche, Daten oder Full-Stack-Produktentwicklung arbeiten, würde ich mich sehr über ein Gespräch freuen.",
-            copy: "Ich interessiere mich immer für starke Teams, sinnvolle Produkte und Arbeit, die technische Tiefe mit echtem Nutzen verbindet.",
+            title: "Wenn Sie an KI, Suche, Daten oder Full-Stack-Produktentwicklung arbeiten, w\u00fcrde ich mich sehr \u00fcber ein Gespr\u00e4ch freuen.",
+            copy: "Ich interessiere mich immer f\u00fcr starke Teams, sinnvolle Produkte und Arbeit, die technische Tiefe mit echtem Nutzen verbindet.",
             emailBtn: "E-Mail schreiben",
             linkedinBtn: "Auf LinkedIn vernetzen"
         },
         footer: {
-            text: "© 2026 Mohammad Raif. Entwickelt mit Klarheit, Neugier und echter Begeisterung für angewandte KI.",
+            text: "(c) 2026 Mohammad Raif. Entwickelt mit Klarheit, Neugier und echter Begeisterung f\u00fcr angewandte KI.",
             back: "Nach oben"
         }
     }
@@ -451,6 +463,14 @@ function renderResearch(items) {
             <ul class="research-list">
                 ${item.bullets.map((bullet) => `<li>${bullet}</li>`).join("")}
             </ul>
+            ${item.link ? `
+                <div class="project-actions mt-4">
+                    <a class="project-link primary" href="${item.link}" download>
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        ${item.linkLabel}
+                    </a>
+                </div>
+            ` : ""}
         </article>
     `).join("");
 }
@@ -510,10 +530,14 @@ function renderLanguage(lang) {
     setText("nav-research", data.nav.research);
     setText("nav-projects", data.nav.projects);
     setText("nav-contact", data.nav.contact);
+    setSelectorText("#nav-paper span", data.nav.paper);
+    setSelectorText("#nav-resume span", data.nav.resume);
+
     setText("hero-eyebrow", data.hero.eyebrow);
     setText("hero-title", data.hero.title);
     setText("hero-copy", data.hero.copy);
     setText("hero-primary", data.hero.primary);
+    setText("hero-paper", data.hero.paper);
     setText("hero-secondary", data.hero.secondary);
     setText("hero-status", data.hero.status);
     setText("hero-panel-title", data.hero.panelTitle);
@@ -539,11 +563,6 @@ function renderLanguage(lang) {
     setText("contact-title", data.contact.title);
     setText("contact-copy", data.contact.copy);
     setText("footer-back", data.footer.back);
-
-    const navResumeLabel = document.querySelector("#nav-resume span");
-    if (navResumeLabel) {
-        navResumeLabel.textContent = data.nav.resume;
-    }
 
     setSelectorText("#projects-profile-link span", data.projects.profileLink);
     setSelectorText("#contact-email-btn span", data.contact.emailBtn);

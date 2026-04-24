@@ -231,6 +231,10 @@ body.theme-dark .app-navbar.is-scrolled {
     transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
+.paper-pill {
+    background: linear-gradient(135deg, rgba(15, 118, 110, 0.14), rgba(187, 107, 42, 0.14));
+}
+
 .hero-section {
     position: relative;
     min-height: 100svh;
