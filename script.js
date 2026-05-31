@@ -9,7 +9,8 @@ const githubLinks = {
 };
 
 const paperLinks = {
-    responsibleAi: "ethical-safe-responsible-ai-paper.pdf"
+    responsibleAi: "ethical-safe-responsible-ai-paper.pdf",
+    legalPdfDissertation: "legal-pdf-analyzer-dissertation.pdf"
 };
 
 const content = {
@@ -35,6 +36,18 @@ const content = {
             status: "Currently focused on applied AI and intelligent search experiences",
             panelTitle: "What I care about",
             panelCopy: "I enjoy taking complex systems like semantic search, legal document analysis, object detection, or recommendation pipelines and making them feel clear, fast, and useful to real users.",
+            highlights: [
+                {
+                    icon: "fa-solid fa-award",
+                    title: "India AI Impact Summit 2026",
+                    copy: "Legal PDF Analyzer presented as an applied AI project."
+                },
+                {
+                    icon: "fa-solid fa-shield-halved",
+                    title: "Indian Navy AI Use Case",
+                    copy: "Built a YOLO-based object detection workflow for a defence-focused use case."
+                }
+            ],
             facts: [
                 { value: "3", label: "Internships completed" },
                 { value: "4", label: "Public project repos" },
@@ -50,7 +63,7 @@ const content = {
             stats: [
                 {
                     value: "Appolo Computers",
-                    label: "AI internship where I worked on the Legal PDF Analyzer and an Indian Navy object detection project."
+                    label: "AI internship where I built the Legal PDF Analyzer and contributed to a YOLO-based object detection workflow for an Indian Navy use case."
                 },
                 {
                     value: "Published Paper",
@@ -149,12 +162,14 @@ const content = {
             profileLink: "Explore more on GitHub",
             githubLabel: "GitHub",
             liveLabel: "Live demo",
+            documentLabel: "View dissertation",
             items: [
                 {
                     title: "Legal PDF Analyzer",
-                    description: "A legal-tech platform that uploads court judgments, extracts and cleans the text, finds legal citations, and helps users explore how cases relate to each other through semantic search, summaries, and graph-style views.",
-                    tags: ["Python", "NLP", "Elasticsearch", "Search", "Full stack"],
-                    github: githubLinks.legalPdf
+                    description: "Presented at the India AI Impact Summit 2026, this legal-tech platform uploads court judgments, extracts and cleans the text, finds legal citations, and helps users explore how cases relate through semantic search, summaries, and graph-style views.",
+                    tags: ["AI Summit 2026", "Python", "NLP", "Elasticsearch", "Search", "Full stack"],
+                    github: githubLinks.legalPdf,
+                    document: paperLinks.legalPdfDissertation
                 },
                 {
                     title: "Phishing URL Detection System",
@@ -220,6 +235,18 @@ const content = {
             status: "Derzeit konzentriere ich mich auf angewandte KI und intelligente Sucherlebnisse",
             panelTitle: "Was mir wichtig ist",
             panelCopy: "Mich begeistert es, komplexe Systeme wie semantische Suche, juristische Dokumentenanalyse, Objekterkennung oder Empfehlungspipelines so zu gestalten, dass sie klar, schnell und f\u00fcr echte Nutzer hilfreich sind.",
+            highlights: [
+                {
+                    icon: "fa-solid fa-award",
+                    title: "India AI Impact Summit 2026",
+                    copy: "Legal PDF Analyzer als angewandtes KI-Projekt pr\u00e4sentiert."
+                },
+                {
+                    icon: "fa-solid fa-shield-halved",
+                    title: "KI-Use-Case der indischen Marine",
+                    copy: "Entwickelte einen YOLO-basierten Objekterkennungs-Workflow f\u00fcr einen verteidigungsbezogenen Use Case."
+                }
+            ],
             facts: [
                 { value: "3", label: "Abgeschlossene Praktika" },
                 { value: "4", label: "\u00d6ffentliche Projekt-Repositories" },
@@ -235,7 +262,7 @@ const content = {
             stats: [
                 {
                     value: "Appolo Computers",
-                    label: "KI-Praktikum, in dem ich am Legal PDF Analyzer und an einem Objekterkennungsprojekt f\u00fcr einen Use Case der indischen Marine gearbeitet habe."
+                    label: "KI-Praktikum, in dem ich den Legal PDF Analyzer entwickelte und zu einem YOLO-basierten Objekterkennungs-Workflow f\u00fcr einen Use Case der indischen Marine beitrug."
                 },
                 {
                     value: "Ver\u00f6ffentlichtes Paper",
@@ -334,12 +361,14 @@ const content = {
             profileLink: "Mehr auf GitHub ansehen",
             githubLabel: "GitHub",
             liveLabel: "Live-Demo",
+            documentLabel: "Dissertation ansehen",
             items: [
                 {
                     title: "Legal PDF Analyzer",
-                    description: "Eine Legal-Tech-Plattform, die Gerichtsentscheidungen hochl\u00e4dt, den Text extrahiert und bereinigt, juristische Zitate erkennt und Beziehungen zwischen F\u00e4llen \u00fcber semantische Suche, Zusammenfassungen und Graph-Ansichten sichtbar macht.",
-                    tags: ["Python", "NLP", "Elasticsearch", "Suche", "Full Stack"],
-                    github: githubLinks.legalPdf
+                    description: "Diese beim India AI Impact Summit 2026 pr\u00e4sentierte Legal-Tech-Plattform l\u00e4dt Gerichtsentscheidungen hoch, extrahiert und bereinigt den Text, erkennt juristische Zitate und macht Beziehungen zwischen F\u00e4llen \u00fcber semantische Suche, Zusammenfassungen und Graph-Ansichten sichtbar.",
+                    tags: ["AI Summit 2026", "Python", "NLP", "Elasticsearch", "Suche", "Full Stack"],
+                    github: githubLinks.legalPdf,
+                    document: paperLinks.legalPdfDissertation
                 },
                 {
                     title: "Phishing URL Detection System",
@@ -410,6 +439,19 @@ function renderFacts(items) {
         <div class="fact-card">
             <span class="fact-value">${item.value}</span>
             <span class="fact-label">${item.label}</span>
+        </div>
+    `).join("");
+}
+
+function renderHeroHighlights(items) {
+    const highlightsRoot = document.getElementById("hero-highlights");
+    highlightsRoot.innerHTML = items.map((item) => `
+        <div class="hero-highlight">
+            <i class="${item.icon}"></i>
+            <div>
+                <strong>${item.title}</strong>
+                <span>${item.copy}</span>
+            </div>
         </div>
     `).join("");
 }
@@ -495,6 +537,12 @@ function renderProjects(section) {
                         ${section.liveLabel}
                     </a>
                 ` : ""}
+                ${item.document ? `
+                    <a class="project-link" href="${item.document}" download>
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        ${section.documentLabel}
+                    </a>
+                ` : ""}
             </div>
         </article>
     `).join("");
@@ -569,6 +617,7 @@ function renderLanguage(lang) {
     setSelectorText("#contact-linkedin-btn span", data.contact.linkedinBtn);
 
     renderFacts(data.hero.facts);
+    renderHeroHighlights(data.hero.highlights);
     renderStats(data.about.stats);
     renderSkills(data.skills.groups);
     renderExperience(data.experience.items);
