@@ -605,7 +605,6 @@ function renderLanguage(lang) {
     setText("nav-contact", data.nav.contact);
     setSelectorText("#nav-paper span", data.nav.paper);
     setupDissertationButton(data.nav);
-    setSelectorText("#nav-resume span", data.nav.resume);
 
     setText("hero-eyebrow", data.hero.eyebrow);
     setText("hero-title", data.hero.title);
