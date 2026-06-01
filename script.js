@@ -24,7 +24,7 @@ const content = {
             projects: "Projects",
             contact: "Contact",
             paper: "Research Paper",
-            resume: "Resume"
+            dissertation: "Legal PDF Analyzer"
         },
         hero: {
             eyebrow: "AI | Search | Responsible Systems",
@@ -32,7 +32,7 @@ const content = {
             copy: "I am Mohammad Raif, a final-year Computer Science student focused on applied AI, information retrieval, data science, and full-stack product building.",
             primary: "See projects",
             paper: "Download research paper",
-            secondary: "Download CV",
+            secondary: "Legal PDF Analyzer Dissertation",
             status: "Currently focused on applied AI and intelligent search experiences",
             panelTitle: "What I care about",
             panelCopy: "I enjoy taking complex systems like semantic search, legal document analysis, object detection, or recommendation pipelines and making them feel clear, fast, and useful to real users.",
@@ -40,7 +40,7 @@ const content = {
                 {
                     icon: "fa-solid fa-award",
                     title: "India AI Impact Summit 2026",
-                    copy: "Legal PDF Analyzer presented as an applied AI project."
+                    copy: "Legal PDF Analyzer presented as an applied AI project. Its B.Tech dissertation is available from the top button."
                 },
                 {
                     icon: "fa-solid fa-shield-halved",
@@ -223,7 +223,7 @@ const content = {
             projects: "Projekte",
             contact: "Kontakt",
             paper: "Forschungspapier",
-            resume: "Lebenslauf"
+            dissertation: "Legal PDF Analyzer"
         },
         hero: {
             eyebrow: "KI | Suche | Verantwortungsvolle Systeme",
@@ -231,7 +231,7 @@ const content = {
             copy: "Ich bin Mohammad Raif, ein B.Tech-Student im letzten Studienjahr mit Fokus auf angewandte KI, Information Retrieval, Data Science und Full-Stack-Produktentwicklung.",
             primary: "Projekte ansehen",
             paper: "Forschungspapier herunterladen",
-            secondary: "Lebenslauf herunterladen",
+            secondary: "Legal PDF Analyzer Dissertation",
             status: "Derzeit konzentriere ich mich auf angewandte KI und intelligente Sucherlebnisse",
             panelTitle: "Was mir wichtig ist",
             panelCopy: "Mich begeistert es, komplexe Systeme wie semantische Suche, juristische Dokumentenanalyse, Objekterkennung oder Empfehlungspipelines so zu gestalten, dass sie klar, schnell und f\u00fcr echte Nutzer hilfreich sind.",
@@ -239,7 +239,7 @@ const content = {
                 {
                     icon: "fa-solid fa-award",
                     title: "India AI Impact Summit 2026",
-                    copy: "Legal PDF Analyzer als angewandtes KI-Projekt pr\u00e4sentiert."
+                    copy: "Legal PDF Analyzer als angewandtes KI-Projekt pr\u00e4sentiert. Die B.Tech-Dissertation ist \u00fcber den oberen Button verf\u00fcgbar."
                 },
                 {
                     icon: "fa-solid fa-shield-halved",
@@ -579,7 +579,7 @@ function renderLanguage(lang) {
     setText("nav-projects", data.nav.projects);
     setText("nav-contact", data.nav.contact);
     setSelectorText("#nav-paper span", data.nav.paper);
-    setSelectorText("#nav-resume span", data.nav.resume);
+    setSelectorText("#nav-dissertation span", data.nav.dissertation);
 
     setText("hero-eyebrow", data.hero.eyebrow);
     setText("hero-title", data.hero.title);
