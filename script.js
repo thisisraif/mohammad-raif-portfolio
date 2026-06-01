@@ -24,7 +24,8 @@ const content = {
             projects: "Projects",
             contact: "Contact",
             paper: "Research Paper",
-            dissertation: "Legal PDF Analyzer"
+            dissertation: "Dissertation",
+            dissertationHover: "Legal PDF Analyzer"
         },
         hero: {
             eyebrow: "AI | Search | Responsible Systems",
@@ -32,15 +33,15 @@ const content = {
             copy: "I am Mohammad Raif, a final-year Computer Science student focused on applied AI, information retrieval, data science, and full-stack product building.",
             primary: "See projects",
             paper: "Download research paper",
-            secondary: "Legal PDF Analyzer Dissertation",
+            secondary: "Download Dissertation",
             status: "Currently focused on applied AI and intelligent search experiences",
             panelTitle: "What I care about",
             panelCopy: "I enjoy taking complex systems like semantic search, legal document analysis, object detection, or recommendation pipelines and making them feel clear, fast, and useful to real users.",
             highlights: [
                 {
                     icon: "fa-solid fa-award",
-                    title: "India AI Impact Summit 2026",
-                    copy: "Legal PDF Analyzer presented as an applied AI project. Its B.Tech dissertation is available from the top button."
+                    title: "Final-Year Project | India AI Impact Summit 2026",
+                    copy: "Legal PDF Analyzer is my B.Tech final-year project. It was presented as an applied AI project, and its dissertation is available from the top button."
                 },
                 {
                     icon: "fa-solid fa-shield-halved",
@@ -223,7 +224,8 @@ const content = {
             projects: "Projekte",
             contact: "Kontakt",
             paper: "Forschungspapier",
-            dissertation: "Legal PDF Analyzer"
+            dissertation: "Dissertation",
+            dissertationHover: "Legal PDF Analyzer"
         },
         hero: {
             eyebrow: "KI | Suche | Verantwortungsvolle Systeme",
@@ -231,15 +233,15 @@ const content = {
             copy: "Ich bin Mohammad Raif, ein B.Tech-Student im letzten Studienjahr mit Fokus auf angewandte KI, Information Retrieval, Data Science und Full-Stack-Produktentwicklung.",
             primary: "Projekte ansehen",
             paper: "Forschungspapier herunterladen",
-            secondary: "Legal PDF Analyzer Dissertation",
+            secondary: "Dissertation herunterladen",
             status: "Derzeit konzentriere ich mich auf angewandte KI und intelligente Sucherlebnisse",
             panelTitle: "Was mir wichtig ist",
             panelCopy: "Mich begeistert es, komplexe Systeme wie semantische Suche, juristische Dokumentenanalyse, Objekterkennung oder Empfehlungspipelines so zu gestalten, dass sie klar, schnell und f\u00fcr echte Nutzer hilfreich sind.",
             highlights: [
                 {
                     icon: "fa-solid fa-award",
-                    title: "India AI Impact Summit 2026",
-                    copy: "Legal PDF Analyzer als angewandtes KI-Projekt pr\u00e4sentiert. Die B.Tech-Dissertation ist \u00fcber den oberen Button verf\u00fcgbar."
+                    title: "Abschlussprojekt | India AI Impact Summit 2026",
+                    copy: "Legal PDF Analyzer ist mein B.Tech-Abschlussprojekt. Es wurde als angewandtes KI-Projekt pr\u00e4sentiert, und die Dissertation ist \u00fcber den oberen Button verf\u00fcgbar."
                 },
                 {
                     icon: "fa-solid fa-shield-halved",
@@ -443,6 +445,25 @@ function renderFacts(items) {
     `).join("");
 }
 
+function setupDissertationButton(labels) {
+    const button = document.getElementById("nav-dissertation");
+    const label = button?.querySelector("span");
+
+    if (!button || !label) {
+        return;
+    }
+
+    label.textContent = labels.dissertation;
+    button.onmouseenter = () => {
+        label.textContent = labels.dissertationHover;
+    };
+    button.onmouseleave = () => {
+        label.textContent = labels.dissertation;
+    };
+    button.onfocus = button.onmouseenter;
+    button.onblur = button.onmouseleave;
+}
+
 function renderHeroHighlights(items) {
     const highlightsRoot = document.getElementById("hero-highlights");
     highlightsRoot.innerHTML = items.map((item) => `
@@ -579,7 +600,7 @@ function renderLanguage(lang) {
     setText("nav-projects", data.nav.projects);
     setText("nav-contact", data.nav.contact);
     setSelectorText("#nav-paper span", data.nav.paper);
-    setSelectorText("#nav-dissertation span", data.nav.dissertation);
+    setupDissertationButton(data.nav);
 
     setText("hero-eyebrow", data.hero.eyebrow);
     setText("hero-title", data.hero.title);
