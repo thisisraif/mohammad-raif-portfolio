@@ -25,7 +25,8 @@ const content = {
             contact: "Contact",
             paper: "Research Paper",
             dissertation: "Dissertation",
-            dissertationHover: "Legal PDF Analyzer"
+            dissertationHover: "Legal PDF Analyzer",
+            resume: "Resume"
         },
         hero: {
             eyebrow: "AI | Search | Responsible Systems",
@@ -34,6 +35,7 @@ const content = {
             primary: "See projects",
             paper: "Download research paper",
             secondary: "Download Dissertation",
+            resume: "Download CV",
             status: "Currently focused on applied AI and intelligent search experiences",
             panelTitle: "What I care about",
             panelCopy: "I enjoy taking complex systems like semantic search, legal document analysis, object detection, or recommendation pipelines and making them feel clear, fast, and useful to real users.",
@@ -225,7 +227,8 @@ const content = {
             contact: "Kontakt",
             paper: "Forschungspapier",
             dissertation: "Dissertation",
-            dissertationHover: "Legal PDF Analyzer"
+            dissertationHover: "Legal PDF Analyzer",
+            resume: "Lebenslauf"
         },
         hero: {
             eyebrow: "KI | Suche | Verantwortungsvolle Systeme",
@@ -234,6 +237,7 @@ const content = {
             primary: "Projekte ansehen",
             paper: "Forschungspapier herunterladen",
             secondary: "Dissertation herunterladen",
+            resume: "Lebenslauf herunterladen",
             status: "Derzeit konzentriere ich mich auf angewandte KI und intelligente Sucherlebnisse",
             panelTitle: "Was mir wichtig ist",
             panelCopy: "Mich begeistert es, komplexe Systeme wie semantische Suche, juristische Dokumentenanalyse, Objekterkennung oder Empfehlungspipelines so zu gestalten, dass sie klar, schnell und f\u00fcr echte Nutzer hilfreich sind.",
@@ -601,6 +605,7 @@ function renderLanguage(lang) {
     setText("nav-contact", data.nav.contact);
     setSelectorText("#nav-paper span", data.nav.paper);
     setupDissertationButton(data.nav);
+    setSelectorText("#nav-resume span", data.nav.resume);
 
     setText("hero-eyebrow", data.hero.eyebrow);
     setText("hero-title", data.hero.title);
@@ -608,6 +613,7 @@ function renderLanguage(lang) {
     setText("hero-primary", data.hero.primary);
     setText("hero-paper", data.hero.paper);
     setText("hero-secondary", data.hero.secondary);
+    setText("hero-resume", data.hero.resume);
     setText("hero-status", data.hero.status);
     setText("hero-panel-title", data.hero.panelTitle);
     setText("hero-panel-copy", data.hero.panelCopy);
